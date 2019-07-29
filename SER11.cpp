@@ -1,4 +1,4 @@
-//autho anas khan
+//author anas khan
 //test case 4 not working
 #include <stdio.h>
 int main()
