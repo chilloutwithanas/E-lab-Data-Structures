@@ -1,3 +1,5 @@
+//Author Pulkit Singh
+
 #include<iostream> 
 using namespace std; 
 
@@ -9,10 +11,8 @@ void groupElements(int arr[], int n)
   
 	for (int i=0; i<n; i++) 
 	{ 
-      
 		if (!visited[i]) 
 		{ 
-          
 			cout << arr[i] << " "; 
 			for (int j=i+1; j<n; j++) 
 			{ 
