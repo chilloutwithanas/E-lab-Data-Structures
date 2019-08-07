@@ -22,5 +22,4 @@ int main()
      q.push(y-1);
     }
     cout<<SUM<<endl;
-    
 }
