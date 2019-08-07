@@ -27,7 +27,7 @@ int main() {
 
     r = swap * s;
     int c = 0;
-    int x = (s * c) / 60;
+    int x=(s*c)/60;
     if (r <= m * 60) {
       printf("1");
     } else {
