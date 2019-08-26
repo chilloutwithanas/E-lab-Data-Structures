@@ -1,4 +1,4 @@
- #include<bits/stdc++.h>
+#include<bits/stdc++.h>
  using namespace std;
  
 void MERG(int x,int y);
