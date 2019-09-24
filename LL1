@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+struct node
+{
+  int data;
+  struct node *next;
+}*head,*temp;
+void push()
+{
+  struct node *prevnode,*currnode,*nextnode;
+  prevnode=0;
+  currnode=nextnode=head;
+  while(nextnode!=0)
+  {
+    nextnode=nextnode->next;
+    currnode->next=prevnode;
+    prevnode=currnode;
+    currnode=nextnode;
+  }
+  head=prevnode;
+  temp=head;
+  cout<<"Linked List : ";
+  while(temp!=0)
+  {
+    cout<<"->"<<temp->data;
+    temp=temp->next;
+  }
+}
+int main()
+{
+  int n;
+  cin>>n;
+  head=0;
+  while(n--)
+  {
+    struct node *new_node=new node;
+    cin>>new_node->data;
+    new_node->next=0;
+    if(head==0)
+    {
+      head=temp=new_node;
+    }
+    else
+    {
+      temp->next=new_node;
+      temp=new_node;
+    }
+  }
+  push();
+  return 0;
+}
+   
